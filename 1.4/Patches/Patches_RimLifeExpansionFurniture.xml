@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+<Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>RimLife Expansion Furniture</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+<!-- RLE_RelaxChair -->
+		<li Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "RLE_RelaxChair"]/comps</xpath>
+		<success>Always</success>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "RLE_RelaxChair"]</xpath>
+				<value>
+					<comps/>
+				</value>
+		</nomatch>
+		</li>	
+        <li Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "RLE_RelaxChair"]/comps</xpath>
+			<value>
+				<li Class="DoubleGraphicLayer.CompProperties_SecondLayer">
+					<graphicData/>
+					<altitudeLayer>PawnState</altitudeLayer>
+					<allwaysShowGizmo>false</allwaysShowGizmo>
+				</li>
+			</value>
+		</li>
+<!-- RLE_WorkingChair -->
+		<li Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "RLE_WorkingChair"]/comps</xpath>
+		<success>Always</success>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "RLE_WorkingChair"]</xpath>
+				<value>
+					<comps/>
+				</value>
+		</nomatch>
+		</li>	
+        <li Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "RLE_WorkingChair"]/comps</xpath>
+			<value>
+				<li Class="DoubleGraphicLayer.CompProperties_SecondLayer">
+					<graphicData/>
+					<altitudeLayer>PawnState</altitudeLayer>
+					<allwaysShowGizmo>false</allwaysShowGizmo>
+				</li>
+			</value>
+		</li>
+		<li Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "RLE_RelaxChair" or defName = "RLE_WorkingChair"]</xpath>
+		<value>
+			<drawerType>MapMeshAndRealTime</drawerType>
+		</value>
+		</li>
+
+	</operations>
+    </match>
+</Operation>
+
+</Patch>

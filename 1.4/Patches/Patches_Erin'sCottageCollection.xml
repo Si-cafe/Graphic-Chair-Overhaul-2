@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+<Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>Erin's Cottage Collection</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+<!-- CCot_CottageArmchair -->
+		<li Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "CCot_CottageArmchair"]/comps</xpath>
+		<success>Always</success>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "CCot_CottageArmchair"]</xpath>
+				<value>
+					<comps/>
+				</value>
+		</nomatch>
+		</li>	
+        <li Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "CCot_CottageArmchair"]/comps</xpath>
+			<value>
+				<li Class="DoubleGraphicLayer.CompProperties_SecondLayer">
+					<graphicData/>
+					<altitudeLayer>PawnState</altitudeLayer>
+					<allwaysShowGizmo>true</allwaysShowGizmo>
+				</li>
+			</value>
+		</li>
+<!-- CCot_CottageDiningChair -->
+		<li Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "CCot_CottageDiningChair"]/comps</xpath>
+		<success>Always</success>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "CCot_CottageDiningChair"]</xpath>
+				<value>
+					<comps/>
+				</value>
+		</nomatch>
+		</li>	
+        <li Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "CCot_CottageDiningChair"]/comps</xpath>
+			<value>
+				<li Class="DoubleGraphicLayer.CompProperties_SecondLayer">
+					<graphicData/>
+					<altitudeLayer>PawnState</altitudeLayer>
+					<allwaysShowGizmo>false</allwaysShowGizmo>
+				</li>
+			</value>
+		</li>
+		<li Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "CCot_CottageArmchair" or defName = "CCot_CottageDiningChair"]</xpath>
+		<value>
+			<drawerType>MapMeshAndRealTime</drawerType>
+		</value>
+		</li>
+
+	</operations>
+    </match>
+</Operation>
+
+</Patch>

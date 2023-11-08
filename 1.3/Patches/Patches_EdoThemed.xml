@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+<Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>Edo Themed Expansion</li>
+        <li>Royalty</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+ 
+		<li Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "HSEdoThrone"]/comps</xpath>
+		<value>
+			<li Class="DoubleGraphicLayer.CompProperties_SecondLayer">
+				<graphicData>
+					<texPath>Things/Building/Misc/HSEdoThrone/HSEdoThrone_back</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(2.0,2.0)</drawSize>
+					<drawOffsetNorth>(0,0,0.3)</drawOffsetNorth>
+					<drawOffsetSouth>(0,0,0.3)</drawOffsetSouth>
+					<drawOffsetEast>(0,0,0.3)</drawOffsetEast>
+					<drawOffsetWest>(0,0,0.3)</drawOffsetWest>
+				</graphicData>
+				<altitudeLayer>PawnState</altitudeLayer>
+			</li>
+		</value>
+		</li>
+		<li Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "HSEdoThrone"]</xpath>
+		<value>
+				<drawerType>MapMeshAndRealTime</drawerType>
+		</value>
+		</li>
+
+	</operations>
+    </match>
+</Operation>
+
+</Patch>

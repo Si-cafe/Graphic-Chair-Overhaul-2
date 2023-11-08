@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+<Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>EGI Holograms and Projectors</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+
+<!-- ProjectorThrone -->
+ 		<li Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "ProjectorThrone"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ProjectorThrone"]</xpath>
+				<value>
+					<comps/>
+				</value>
+		</nomatch>
+		</li>
+		<li Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "ProjectorThrone"]/comps</xpath>
+			<value>
+				<li Class="DoubleGraphicLayer.CompProperties_SecondLayer">
+					<graphicData/>
+					<altitudeLayer>PawnState</altitudeLayer>
+					<allwaysShowGizmo>true</allwaysShowGizmo>
+				</li>
+			</value>
+		</li>
+<!-- GrandProjectorThrone -->
+<!--  		<li Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "GrandProjectorThrone"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "GrandProjectorThrone"]</xpath>
+				<value>
+					<comps/>
+				</value>
+		</nomatch>
+		</li>-->		
+	</operations>
+    </match>
+</Operation>
+
+</Patch>

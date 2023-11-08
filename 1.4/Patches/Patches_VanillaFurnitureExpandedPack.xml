@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+<Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>Vanilla Furniture Expanded Pack</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+<!-- FFE_Sofa -->
+		<li Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "FFE_Sofa"]/comps</xpath>
+		<success>Always</success>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "FFE_Sofa"]</xpath>
+				<value>
+					<comps/>
+				</value>
+		</nomatch>
+		</li>	
+        <li Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "FFE_Sofa"]/comps</xpath>
+			<value>
+				<li Class="DoubleGraphicLayer.CompProperties_SecondLayer">
+					<graphicData/>
+					<altitudeLayer>PawnState</altitudeLayer>
+					<allwaysShowGizmo>false</allwaysShowGizmo>
+				</li>
+			</value>
+		</li>
+		<li Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "FFE_Sofa"]</xpath>
+		<value>
+			<drawerType>MapMeshAndRealTime</drawerType>
+		</value>
+		</li>
+<!-- FFE_RoyalSofa -->
+		<li Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "FFE_RoyalSofa"]/comps</xpath>
+		<success>Always</success>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "FFE_RoyalSofa"]</xpath>
+				<value>
+					<comps/>
+				</value>
+		</nomatch>
+		</li>	
+        <li Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "FFE_RoyalSofa"]/comps</xpath>
+			<value>
+				<li Class="DoubleGraphicLayer.CompProperties_SecondLayer">
+					<graphicData/>
+					<altitudeLayer>PawnState</altitudeLayer>
+					<allwaysShowGizmo>true</allwaysShowGizmo>
+				</li>
+			</value>
+		</li>
+		<li Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "FFE_RoyalSofa"]</xpath>
+		<value>
+			<drawerType>MapMeshAndRealTime</drawerType>
+		</value>
+		</li>
+		
+<!-- FFE_Divider -->
+		<li Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "FFE_Divider"]/comps</xpath>
+		<success>Always</success>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "FFE_Divider"]</xpath>
+				<value>
+					<comps/>
+				</value>
+		</nomatch>
+		</li>	
+        <li Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "FFE_Divider"]/comps</xpath>
+			<value>
+				<li Class="DoubleGraphicLayer.CompProperties_SecondLayer">
+					<graphicData/>
+					<altitudeLayer>PawnState</altitudeLayer>
+					<allwaysShowGizmo>true</allwaysShowGizmo>
+				</li>
+			</value>
+		</li>
+		<li Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "FFE_Divider"]</xpath>
+		<value>
+			<drawerType>MapMeshAndRealTime</drawerType>
+		</value>
+		</li>
+<!-- FFE_CupboardLarge -->
+		<li Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "FFE_CupboardLarge"]/comps</xpath>
+		<success>Always</success>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "FFE_CupboardLarge"]</xpath>
+				<value>
+					<comps/>
+				</value>
+		</nomatch>
+		</li>	
+        <li Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "FFE_CupboardLarge"]/comps</xpath>
+			<value>
+				<li Class="DoubleGraphicLayer.CompProperties_SecondLayer">
+					<graphicData/>
+					<altitudeLayer>PawnState</altitudeLayer>
+					<allwaysShowGizmo>true</allwaysShowGizmo>
+				</li>
+			</value>
+		</li>
+		<li Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "FFE_CupboardLarge"]</xpath>
+		<value>
+			<drawerType>MapMeshAndRealTime</drawerType>
+		</value>
+		</li>	
+<!-- FFE_Banner -->
+		<li Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "FFE_Banner"]/comps</xpath>
+		<success>Always</success>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "FFE_Banner"]</xpath>
+				<value>
+					<comps/>
+				</value>
+		</nomatch>
+		</li>	
+        <li Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "FFE_Banner"]/comps</xpath>
+			<value>
+				<li Class="DoubleGraphicLayer.CompProperties_SecondLayer">
+					<graphicData/>
+					<altitudeLayer>PawnState</altitudeLayer>
+					<allwaysShowGizmo>true</allwaysShowGizmo>
+				</li>
+			</value>
+		</li>
+		<li Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "FFE_Banner"]</xpath>
+		<value>
+			<drawerType>MapMeshAndRealTime</drawerType>
+		</value>
+		</li>	
+	</operations>
+    </match>
+</Operation>
+
+</Patch>

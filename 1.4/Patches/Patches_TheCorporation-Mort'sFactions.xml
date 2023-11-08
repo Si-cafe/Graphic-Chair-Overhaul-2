@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+<Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>The Corporation - Mort's Factions</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+<!-- MF_CorporateOfficeChairSimple -->
+		<li Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "MF_CorporateOfficeChairSimple"]/comps</xpath>
+		<success>Always</success>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "MF_CorporateOfficeChairSimple"]</xpath>
+				<value>
+					<comps/>
+				</value>
+		</nomatch>
+		</li>
+		<li Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "MF_CorporateOfficeChairSimple"]/comps</xpath>
+			<value>
+				<li Class="DoubleGraphicLayer.CompProperties_SecondLayer">
+					<graphicData/>
+					<altitudeLayer>PawnState</altitudeLayer>
+					<allwaysShowGizmo>true</allwaysShowGizmo>
+				</li>
+			</value>
+		</li>
+		<li Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "MF_CorporateOfficeChairSimple"]</xpath>
+			<value>
+				<drawerType>MapMeshAndRealTime</drawerType>
+			</value>
+		</li>
+<!-- MF_CorporateOfficeChairExecutive -->
+		<li Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "MF_CorporateOfficeChairExecutive"]/comps</xpath>
+		<success>Always</success>
+		<nomatch Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "MF_CorporateOfficeChairExecutive"]</xpath>
+					<value>
+						<comps/>
+					</value>
+		</nomatch>
+		</li>		
+		<li  Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "MF_CorporateOfficeChairExecutive"]/comps</xpath>
+			<value>
+				<li Class="DoubleGraphicLayer.CompProperties_SecondLayer">
+					<graphicData/>
+					<altitudeLayer>PawnState</altitudeLayer>
+					<allwaysShowGizmo>true</allwaysShowGizmo>
+				</li>
+			</value>
+		</li>
+		<li Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "MF_CorporateOfficeChairExecutive"]</xpath>
+			<value>
+				<drawerType>MapMeshAndRealTime</drawerType>
+			</value>
+		</li>
+	</operations>
+    </match>
+</Operation>
+
+</Patch>

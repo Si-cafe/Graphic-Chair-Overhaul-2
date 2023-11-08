@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Thrones plus</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	<success>Always</success>
+	<operations>
+
+		<li Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ThroneA" or 
+								defName = "ThroneB" or 
+								defName = "ThroneC" or 
+								defName = "GrandThroneA" or 
+								defName = "GrandThroneB" or 
+								defName = "GrandThroneC"]/comps</xpath>
+			<value>
+				<li Class="DoubleGraphicLayer.CompProperties_SecondLayer">
+					<graphicData/>
+					<altitudeLayer>PawnState</altitudeLayer>
+					<allwaysShowGizmo>true</allwaysShowGizmo>
+				</li>
+			</value>
+		</li>
+		<li Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "ThroneA" or
+								defName = "ThroneB" or 
+								defName = "ThroneC" or 
+								defName = "GrandThroneA" or 
+								defName = "GrandThroneB" or 
+								defName = "GrandThroneC"]</xpath>
+				<value>
+					<drawerType>MapMeshAndRealTime</drawerType>
+				</value>
+		</li>
+	</operations>
+    </match>
+</Operation>
+
+</Patch>

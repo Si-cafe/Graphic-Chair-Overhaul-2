@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+<Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>Medieval Overhaul</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+<!-- RoyalArmchair -->
+		<li Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "DankPyon_RoyalArmchair"]/comps</xpath>
+		<success>Always</success>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "DankPyon_RoyalArmchair"]</xpath>
+				<value>
+					<comps/>
+				</value>
+		</nomatch>
+		</li>
+        <li Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "DankPyon_RoyalArmchair"]/comps</xpath>
+			<value>
+				<li Class="DoubleGraphicLayer.CompProperties_SecondLayer">
+					<graphicData/>
+					<altitudeLayer>PawnState</altitudeLayer>
+					<allwaysShowGizmo>true</allwaysShowGizmo>
+				</li>
+			</value>
+		</li>
+
+<!-- RusticChair -->
+		<li Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "DankPyon_RusticChair"]/comps</xpath>
+		<success>Always</success>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "DankPyon_RusticChair"]</xpath>
+				<value>
+					<comps/>
+				</value>
+		</nomatch>
+		</li>
+        <li Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "DankPyon_RusticChair"]/comps</xpath>
+			<value>
+				<li Class="DoubleGraphicLayer.CompProperties_SecondLayer">
+					<graphicData/>
+					<altitudeLayer>PawnState</altitudeLayer>
+					<allwaysShowGizmo>false</allwaysShowGizmo>
+				</li>
+			</value>
+		</li>
+
+<!-- RusticNobleChair -->
+		<li Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "DankPyon_RusticNobleChair"]/comps</xpath>
+		<success>Always</success>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "DankPyon_RusticNobleChair"]</xpath>
+				<value>
+					<comps/>
+				</value>
+		</nomatch>
+		</li>
+        <li Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "DankPyon_RusticNobleChair"]/comps</xpath>
+			<value>
+				<li Class="DoubleGraphicLayer.CompProperties_SecondLayer">
+					<graphicData/>
+					<altitudeLayer>PawnState</altitudeLayer>
+					<allwaysShowGizmo>false</allwaysShowGizmo>
+				</li>
+			</value>
+		</li>
+
+		<li Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "DankPyon_RoyalArmchair" or
+		                    defName = "DankPyon_RusticChair" or 
+		                    defName = "DankPyon_RusticNobleChair"]</xpath>
+		<value>
+			<drawerType>MapMeshAndRealTime</drawerType>
+		</value>
+		</li>
+
+	</operations>
+    </match>
+</Operation>
+
+</Patch>

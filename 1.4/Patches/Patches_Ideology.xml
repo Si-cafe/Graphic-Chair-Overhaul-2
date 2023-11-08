@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Ideology</li>
+		</mods>
+	<match Class="PatchOperationAdd">
+	<success>Always</success>
+		<xpath>/Defs/ThingDef[defName="ChristmasTree"]</xpath>
+			<value>
+				<altitudeLayer>BuildingBelowTop</altitudeLayer>
+			</value>
+	</match>
+	</Operation>
+</Patch>
