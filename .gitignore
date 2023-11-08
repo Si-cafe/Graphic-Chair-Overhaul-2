@@ -2,6 +2,5 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/.vs
-/Source/DoubleGraphicLayer_Bak/DoubleGraphicLayer/obj/Release
-/Source/DoubleGraphicLayer/DoubleGraphicLayer/.vs/DoubleGraphicLayer
+.vs/
+obj/
