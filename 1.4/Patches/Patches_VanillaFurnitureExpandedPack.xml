@@ -23,7 +23,6 @@
 			<value>
 				<li Class="DoubleGraphicLayer.CompProperties_SecondLayer">
 					<graphicData/>
-					<altitudeLayer>PawnState</altitudeLayer>
 					<allwaysShowGizmo>false</allwaysShowGizmo>
 				</li>
 			</value>
@@ -50,7 +49,6 @@
 			<value>
 				<li Class="DoubleGraphicLayer.CompProperties_SecondLayer">
 					<graphicData/>
-					<altitudeLayer>PawnState</altitudeLayer>
 					<allwaysShowGizmo>true</allwaysShowGizmo>
 				</li>
 			</value>
@@ -61,88 +59,6 @@
 			<drawerType>MapMeshAndRealTime</drawerType>
 		</value>
 		</li>
-		
-<!-- FFE_Divider -->
-		<li Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName = "FFE_Divider"]/comps</xpath>
-		<success>Always</success>
-		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName = "FFE_Divider"]</xpath>
-				<value>
-					<comps/>
-				</value>
-		</nomatch>
-		</li>	
-        <li Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef[defName = "FFE_Divider"]/comps</xpath>
-			<value>
-				<li Class="DoubleGraphicLayer.CompProperties_SecondLayer">
-					<graphicData/>
-					<altitudeLayer>PawnState</altitudeLayer>
-					<allwaysShowGizmo>true</allwaysShowGizmo>
-				</li>
-			</value>
-		</li>
-		<li Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef[defName = "FFE_Divider"]</xpath>
-		<value>
-			<drawerType>MapMeshAndRealTime</drawerType>
-		</value>
-		</li>
-<!-- FFE_CupboardLarge -->
-		<li Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName = "FFE_CupboardLarge"]/comps</xpath>
-		<success>Always</success>
-		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName = "FFE_CupboardLarge"]</xpath>
-				<value>
-					<comps/>
-				</value>
-		</nomatch>
-		</li>	
-        <li Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef[defName = "FFE_CupboardLarge"]/comps</xpath>
-			<value>
-				<li Class="DoubleGraphicLayer.CompProperties_SecondLayer">
-					<graphicData/>
-					<altitudeLayer>PawnState</altitudeLayer>
-					<allwaysShowGizmo>true</allwaysShowGizmo>
-				</li>
-			</value>
-		</li>
-		<li Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef[defName = "FFE_CupboardLarge"]</xpath>
-		<value>
-			<drawerType>MapMeshAndRealTime</drawerType>
-		</value>
-		</li>	
-<!-- FFE_Banner -->
-		<li Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName = "FFE_Banner"]/comps</xpath>
-		<success>Always</success>
-		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName = "FFE_Banner"]</xpath>
-				<value>
-					<comps/>
-				</value>
-		</nomatch>
-		</li>	
-        <li Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef[defName = "FFE_Banner"]/comps</xpath>
-			<value>
-				<li Class="DoubleGraphicLayer.CompProperties_SecondLayer">
-					<graphicData/>
-					<altitudeLayer>PawnState</altitudeLayer>
-					<allwaysShowGizmo>true</allwaysShowGizmo>
-				</li>
-			</value>
-		</li>
-		<li Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef[defName = "FFE_Banner"]</xpath>
-		<value>
-			<drawerType>MapMeshAndRealTime</drawerType>
-		</value>
-		</li>	
 	</operations>
     </match>
 </Operation>

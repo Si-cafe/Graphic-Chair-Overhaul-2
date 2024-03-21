@@ -23,7 +23,6 @@
 			<value>
 				<li Class="DoubleGraphicLayer.CompProperties_SecondLayer">
 					<graphicData/>
-					<altitudeLayer>PawnState</altitudeLayer>
 					<allwaysShowGizmo>false</allwaysShowGizmo>
 				</li>
 			</value>
@@ -44,7 +43,6 @@
 			<value>
 				<li Class="DoubleGraphicLayer.CompProperties_SecondLayer">
 					<graphicData/>
-					<altitudeLayer>PawnState</altitudeLayer>
 					<allwaysShowGizmo>false</allwaysShowGizmo>
 				</li>
 			</value>
@@ -65,7 +63,6 @@
 			<value>
 				<li Class="DoubleGraphicLayer.CompProperties_SecondLayer">
 					<graphicData/>
-					<altitudeLayer>PawnState</altitudeLayer>
 					<allwaysShowGizmo>true</allwaysShowGizmo>
 				</li>
 			</value>
@@ -86,7 +83,6 @@
 			<value>
 				<li Class="DoubleGraphicLayer.CompProperties_SecondLayer">
 					<graphicData/>
-					<altitudeLayer>PawnState</altitudeLayer>
 					<allwaysShowGizmo>false</allwaysShowGizmo>
 				</li>
 			</value>

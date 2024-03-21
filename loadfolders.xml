@@ -14,7 +14,6 @@
 		<li IfModActive="spoonshortage.rimkea">Mods/RIMkea</li>
 		<li IfModActive="daylight.RimLifeExFurMod">Mods/RimLife Expansion Furniture</li>
 		<li IfModActive="VanillaExpanded.VFECore">Mods/Vanilla Furniture Expanded</li>
-		<li IfModActive="VanillaExpanded.VFEPropsandDecor">Mods/Vanilla Furniture Expanded - Props and Decor</li>
 		<li IfModActive="VanillaExpanded.VFESpacer">Mods/Vanilla Furniture Expanded - Spacer Module</li>
 		<li IfModActive="VanillaExpanded.VTEXE">Mods/Vanilla Textures Expanded</li>
 		<li IfModActive="VanillaExpanded.VTEXVariations">Mods/Vanilla Textures Expanded - Variations</li>
@@ -48,7 +47,6 @@
 		<li IfModActive="spoonshortage.rimkea">Mods/RIMkea</li>
 		<li IfModActive="daylight.RimLifeExFurMod">Mods/RimLife Expansion Furniture</li>
 		<li IfModActive="VanillaExpanded.VFECore">Mods/Vanilla Furniture Expanded</li>
-		<li IfModActive="VanillaExpanded.VFEPropsandDecor">Mods/Vanilla Furniture Expanded - Props and Decor</li>
 		<li IfModActive="VanillaExpanded.VFESpacer">Mods/Vanilla Furniture Expanded - Spacer Module</li>
 		<li IfModActive="VanillaExpanded.VTEXE">Mods/Vanilla Textures Expanded</li>
 		<li IfModActive="VanillaExpanded.VTEXVariations">Mods/Vanilla Textures Expanded - Variations</li>
@@ -66,9 +64,46 @@
 		<li IfModActive="sihv.rombones">Mods/Rim of Madness - Bones</li>
 		<li IfModActive="Neronix17.Outland.Core">Mods/Outland - Core</li>
 		<li IfModActive="Anthitei.ATHsStyleDraconic.Style">Mods/ATH's style draconic</li>
+		<li IfModActive="anthitei.athsstylegothic.style">Mods/ATH's style Gothic and Bloody Gothic</li>
 
-		<li IfModActive="Ludeon.RimWorld.Biotech">Mods/Biotech</li>
 		<!-- <li IfModActive="55555555555555">Mods/0000000000000</li> -->
-
 	</v1.4>
+
+	<v1.5>
+		<li>/</li>
+		<li>1.4</li>		
+		<li IfModActive="Ludeon.RimWorld.Royalty">Mods/Royalty</li>
+		<li IfModActive="Ludeon.RimWorld.Ideology">Mods/Ideology</li>
+		<li IfModActive="Heis.Edo.Themed.Expansion">Mods/Edo Themed Expansion</li>
+		<li IfModActive="Solaris.FurnitureBase">Mods/GloomyFurniture</li>
+		<li IfModActive="DankPyon.Medieval.Overhaul">Mods/Medieval Overhaul</li>
+		<li IfModActive="Mlie.MoreFurniture">Mods/More Furniture (Continued)</li>
+		<li IfModActive="LimeTreeSnake.Furnishing">Mods/[LTS]Furnishing</li>
+		<li IfModActive="DoctorStupid.Sofa">Mods/Literally just a sofa</li>
+		<li IfModActive="Neronix17.Outland.FurnitureAndDecor">Mods/Outland - Furniture &amp; Decor</li>
+		<li IfModActive="spoonshortage.rimkea">Mods/RIMkea</li>
+		<li IfModActive="daylight.RimLifeExFurMod">Mods/RimLife Expansion Furniture</li>
+		<li IfModActive="VanillaExpanded.VFECore">Mods/Vanilla Furniture Expanded</li>
+		<li IfModActive="VanillaExpanded.VFESpacer">Mods/Vanilla Furniture Expanded - Spacer Module</li>
+		<li IfModActive="VanillaExpanded.VTEXE">Mods/Vanilla Textures Expanded</li>
+		<li IfModActive="VanillaExpanded.VTEXVariations">Mods/Vanilla Textures Expanded - Variations</li>
+
+		<li IfModActive="lumi.throneplus">Mods/Thrones plus</li>
+		<li IfModActive="Erin.CottageCollection">Mods/Erin's Cottage Collection</li>
+		<li IfModActive="OskarPotocki.VFE.Empire">Mods/Vanilla Factions Expanded - Empire</li>
+		<li IfModActive="Farxmai2.VanillaFurnitureExpandedPack">Mods/Vanilla Furniture Expanded Pack</li>
+		<li IfModActive="Vesper.EGIHologramsandProjectors">Mods/EGI Holograms and Projectors</li>
+		<li IfModActive="VanillaExpanded.VMemesE">Mods/Vanilla Ideology Expanded - Memes and Structures</li>
+		<li IfModActive="Sarg.AlphaMemes">Mods/Alpha Memes</li>
+		<li IfModActive="StyleRevised.Animalist">Mods/Style Revised - Animalist</li>
+		<li IfModActive="Trickity.Samurai.Faction">Mods/T's Samurai Faction</li>
+		<li IfModActive="MortStrudel.CorporationFaction">Mods/The Corporation - Mort's Factions</li>
+		<li IfModActive="sihv.rombones">Mods/Rim of Madness - Bones</li>
+		<li IfModActive="Neronix17.Outland.Core">Mods/Outland - Core</li>
+		<li IfModActive="Anthitei.ATHsStyleDraconic.Style">Mods/ATH's style draconic</li>
+		<li IfModActive="anthitei.athsstylegothic.style">Mods/ATH's style Gothic and Bloody Gothic</li>
+
+		<!-- <li IfModActive="55555555555555">Mods/0000000000000</li> -->
+	</v1.5>
+
 </loadFolders>

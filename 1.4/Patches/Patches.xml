@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
+
 <Operation Class="PatchOperationSequence">
 	<success>Always</success>
-	<operations>		
+	<operations>
 <!-- Armchair -->
 		<li Class="PatchOperationConditional">
 		<xpath>/Defs/ThingDef[defName = "Armchair"]/comps</xpath>
@@ -12,16 +13,6 @@
 					<comps/>
 				</value>
 		</nomatch>
-		</li>
-		<li Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef[defName = "Armchair"]/comps</xpath>
-			<value>
-				<li Class="DoubleGraphicLayer.CompProperties_SecondLayer">
-					<graphicData/>
-					<!-- <altitudeLayer>PawnState</altitudeLayer> -->
-					<allwaysShowGizmo>false</allwaysShowGizmo>
-				</li>
-			</value>
 		</li>
 <!-- DiningChair -->
 		<li Class="PatchOperationConditional">
@@ -38,12 +29,11 @@
 			<value>
 				<li Class="DoubleGraphicLayer.CompProperties_SecondLayer">
 					<graphicData/>
-					<!-- <altitudeLayer>PawnState</altitudeLayer> -->
 					<allwaysShowGizmo>false</allwaysShowGizmo>
-				</li>			
+				</li>
 			</value>
 		</li>
-	
+
 		<li Class="PatchOperationAdd">
 			<xpath>/Defs/ThingDef[defName = "Armchair" or defName = "DiningChair"]</xpath>
 			<value>
@@ -52,4 +42,69 @@
 		</li>
 	</operations>
 </Operation>	
+
+<!-- If find a MOD that adds heavy armrests to the armchair by changing the Styles,
+	make <allwaysShowGizmo> to "true". -->
+<Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>ATH's style Gothic and Bloody Gothic</li>
+        <!-- <li></li> -->
+    </mods>
+	<match Class="PatchOperationAdd">
+	<xpath>/Defs/ThingDef[defName = "Armchair"]/comps</xpath>
+		<value>
+			<li Class="DoubleGraphicLayer.CompProperties_SecondLayer">
+				<graphicData/>
+				<allwaysShowGizmo>true</allwaysShowGizmo>
+			</li>
+		</value>
+	</match>
+	<nomatch Class="PatchOperationAdd">
+	<xpath>/Defs/ThingDef[defName = "Armchair"]/comps</xpath>
+		<value>
+			<li Class="DoubleGraphicLayer.CompProperties_SecondLayer">
+				<graphicData/>
+				<allwaysShowGizmo>false</allwaysShowGizmo>
+			</li>
+		</value>
+	</nomatch>
+</Operation>
+		
+
+<!-- for ver 1.5 -->
+<Operation Class="PatchOperationSequence">
+	<success>Always</success>
+	<operations>	
+	<!-- Couch -->
+		<li Class="PatchOperationTest">
+			<xpath>/Defs/ThingDef[defName = "Couch"]</xpath>
+		</li>
+		<li Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "Couch"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "Couch"]</xpath>
+				<value>
+					<comps/>
+				</value>
+		</nomatch>
+		</li>
+		<li Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "Couch"]/comps</xpath>
+			<value>
+				<li Class="DoubleGraphicLayer.CompProperties_SecondLayer">
+					<graphicData/>
+					<allwaysShowGizmo>false</allwaysShowGizmo>
+				</li>
+			</value>
+		</li>
+	
+		<li Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "Couch"]</xpath>
+			<value>
+				<drawerType>MapMeshAndRealTime</drawerType>
+			</value>
+		</li>
+	</operations>
+</Operation>
 </Patch>
+

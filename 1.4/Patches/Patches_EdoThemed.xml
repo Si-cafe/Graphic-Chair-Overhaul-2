@@ -17,7 +17,6 @@
 			<value>
 				<li Class="DoubleGraphicLayer.CompProperties_SecondLayer">
 					<graphicData/>
-					<altitudeLayer>PawnState</altitudeLayer>
 					<allwaysShowGizmo>false</allwaysShowGizmo>
 				</li>
 			</value>
