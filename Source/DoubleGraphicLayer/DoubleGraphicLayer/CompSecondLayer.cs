@@ -127,7 +127,6 @@ namespace DoubleGraphicLayer
 
             var path = $"{data?.texPath ?? graphic.path}_back";
             data ??= parent.def.graphicData;
-
             var shaderType = data.shaderType;
 
             // Mod "Faster Game Loading" delays the loading of graphics (optional), so shaderType might be null

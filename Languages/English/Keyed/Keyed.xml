@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
 	<DoubleGraphicLayer_Update>Update DGL</DoubleGraphicLayer_Update>
-	<DoubleGraphicLayer_UpdateDesc>Paint overlay image (double graphic layer). Mainly used after painting.</DoubleGraphicLayer_UpdateDesc>
+	<DoubleGraphicLayer_UpdateDesc>Update over layer image (double graphic layer).</DoubleGraphicLayer_UpdateDesc>
 
 	<DoubleGraphicLayer_Toggle>Toggle DGL</DoubleGraphicLayer_Toggle>
-	<DoubleGraphicLayer_ToggleDesc>Toggle overlay image (double graphic layer). Use when objects and images do not match.</DoubleGraphicLayer_ToggleDesc>
+	<DoubleGraphicLayer_ToggleDesc>Toggle over layer image (double graphic layer).</DoubleGraphicLayer_ToggleDesc>
 
-	<DoubleGraphicLayer_ShowGizmo>Show toggle button</DoubleGraphicLayer_ShowGizmo>
-	<DoubleGraphicLayer_ShowGizmoTip>Display a toggle button if it is possible to switch between second layers. \nTurn it off if you find it annoying. \nEven if disabled, the color update button will still be show.</DoubleGraphicLayer_ShowGizmoTip>
-
-	<DoubleGraphicLayer_ShowUpdateGizmo>Show update button</DoubleGraphicLayer_ShowUpdateGizmo>
-	<DoubleGraphicLayer_ShowUpdateGizmoTip>Display an update button if it is possible to switch between second layers. \nTurn it off if you find it annoying.</DoubleGraphicLayer_ShowUpdateGizmoTip>
+	<DoubleGraphicLayer_ShowGizmo>Show Toggle Button</DoubleGraphicLayer_ShowGizmo>
+	<DoubleGraphicLayer_ShowGizmoTip>Display a toggle button if it is possible to switch between second layers. \nTurn it off if you find it annoying. \nEven if disabled, the update button will still be show if needed.(when changing image, etc)</DoubleGraphicLayer_ShowGizmoTip>
 
 	<DoubleGraphicLayer_DefaultToggle>Default Enabled</DoubleGraphicLayer_DefaultToggle>
-	<DoubleGraphicLayer_DefaultToggleTip>Whether to show second layers by default.\nEven if off, you can still enable it individually.</DoubleGraphicLayer_DefaultToggleTip>
+	<DoubleGraphicLayer_DefaultToggleTip>Whether to turn on the DGL(double graphic layer) when build things.\nEven if off, you can still enable it individually.</DoubleGraphicLayer_DefaultToggleTip>
 
 	<DoubleGraphicLayer_ModName>Graphic Chair Overhaul</DoubleGraphicLayer_ModName>
 </LanguageData>

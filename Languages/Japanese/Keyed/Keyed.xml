@@ -2,19 +2,16 @@
 <LanguageData>
 
 	<DoubleGraphicLayer_Update>DGL 更新</DoubleGraphicLayer_Update>
-	<DoubleGraphicLayer_UpdateDesc>オーバーレイ画像（二重レイヤー）を更新します。 主にペイント後に使用します。</DoubleGraphicLayer_UpdateDesc>
+	<DoubleGraphicLayer_UpdateDesc>オーバーレイヤー画像(double graphic layer)を更新します。</DoubleGraphicLayer_UpdateDesc>
 
 	<DoubleGraphicLayer_Toggle>DGL 切替</DoubleGraphicLayer_Toggle>
-	<DoubleGraphicLayer_ToggleDesc>オーバーレイ画像(二重レイヤー)を切り替えます。 オブジェクトと画像が一致しない場合などに使用します。</DoubleGraphicLayer_ToggleDesc>
+	<DoubleGraphicLayer_ToggleDesc>オーバーレイ画像(double graphic layer)を切り替えます。</DoubleGraphicLayer_ToggleDesc>
 
 	<DoubleGraphicLayer_ShowGizmo>切り替えボタンを表示</DoubleGraphicLayer_ShowGizmo>
-	<DoubleGraphicLayer_ShowGizmoTip>二重レイヤーを切り替えることができる場合は、切替ボタンを表示します。\n邪魔だと感じたらオフにしてください。\n無効にした場合でも、着色後の更新ボタンは表示されます。</DoubleGraphicLayer_ShowGizmoTip>
-
-	<DoubleGraphicLayer_ShowUpdateGizmo>更新ボタンを表示</DoubleGraphicLayer_ShowUpdateGizmo>
-	<DoubleGraphicLayer_ShowUpdateGizmoTip>二つ目のレイヤー間で切り替え可能な場合は更新ボタンを表示します。\n邪魔だと感じたらオフにしてください。</DoubleGraphicLayer_ShowUpdateGizmoTip>
+	<DoubleGraphicLayer_ShowGizmoTip>二重レイヤーを切り替え可能な場合は、切替ボタンを表示します。\n邪魔だと感じたらオフにしてください。\n無効にした場合でも、必要になった場合に更新ボタンは表示されます。(画像変更時など)</DoubleGraphicLayer_ShowGizmoTip>
 
 	<DoubleGraphicLayer_DefaultToggle>デフォルトで有効</DoubleGraphicLayer_DefaultToggle>
-	<DoubleGraphicLayer_DefaultToggleTip>デフォルトで二重レイヤーを表示するかどうか。\nオフの場合でも、個別に有効にすることができます。</DoubleGraphicLayer_DefaultToggleTip>
+	<DoubleGraphicLayer_DefaultToggleTip>建設時にDGL(double graphic layer)をオンにするかどうか。\nオフの場合でも、個別に有効にすることができます。</DoubleGraphicLayer_DefaultToggleTip>
 
 	<DoubleGraphicLayer_ModName>Graphic Chair Overhaul</DoubleGraphicLayer_ModName>
 </LanguageData>
