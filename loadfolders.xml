@@ -65,6 +65,7 @@
 		<li IfModActive="Neronix17.Outland.Core">Mods/Outland - Core</li>
 		<li IfModActive="Anthitei.ATHsStyleDraconic.Style">Mods/ATH's style draconic</li>
 		<li IfModActive="anthitei.athsstylegothic.style">Mods/ATH's style Gothic and Bloody Gothic</li>
+		<li IfModActive="VanillaExpanded.Ideo.SophianStyle">Mods/Vanilla Ideology Expanded - Sophian Style</li>
 
 		<!-- <li IfModActive="55555555555555">Mods/0000000000000</li> -->
 	</v1.4>
@@ -102,6 +103,7 @@
 		<li IfModActive="Neronix17.Outland.Core">Mods/Outland - Core</li>
 		<li IfModActive="Anthitei.ATHsStyleDraconic.Style">Mods/ATH's style draconic</li>
 		<li IfModActive="anthitei.athsstylegothic.style">Mods/ATH's style Gothic and Bloody Gothic</li>
+		<li IfModActive="VanillaExpanded.Ideo.SophianStyle">Mods/Vanilla Ideology Expanded - Sophian Style</li>
 
 		<!-- <li IfModActive="55555555555555">Mods/0000000000000</li> -->
 	</v1.5>

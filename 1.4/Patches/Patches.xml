@@ -6,9 +6,9 @@
 	<operations>
 <!-- Armchair -->
 		<li Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName = "Armchair"]/comps</xpath>
+		<xpath>Defs/ThingDef[defName = "Armchair"]/comps</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName = "Armchair"]</xpath>
+			<xpath>Defs/ThingDef[defName = "Armchair"]</xpath>
 				<value>
 					<comps/>
 				</value>
@@ -16,16 +16,16 @@
 		</li>
 <!-- DiningChair -->
 		<li Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName = "DiningChair"]/comps</xpath>
+		<xpath>Defs/ThingDef[defName = "DiningChair"]/comps</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName = "DiningChair"]</xpath>
+			<xpath>Defs/ThingDef[defName = "DiningChair"]</xpath>
 				<value>
 					<comps/>
 				</value>
 		</nomatch>
 		</li>
 		<li Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef[defName = "DiningChair"]/comps</xpath>
+		<xpath>Defs/ThingDef[defName = "DiningChair"]/comps</xpath>
 			<value>
 				<li Class="DoubleGraphicLayer.CompProperties_SecondLayer">
 					<graphicData/>
@@ -35,7 +35,7 @@
 		</li>
 
 		<li Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName = "Armchair" or defName = "DiningChair"]</xpath>
+			<xpath>Defs/ThingDef[defName = "Armchair" or defName = "DiningChair"]</xpath>
 			<value>
 				<drawerType>MapMeshAndRealTime</drawerType>
 			</value>
@@ -48,10 +48,11 @@
 <Operation Class="PatchOperationFindMod">
     <mods>
         <li>ATH's style Gothic and Bloody Gothic</li>
+        <li>Vanilla Ideology Expanded - Sophian Style</li>
         <!-- <li></li> -->
     </mods>
 	<match Class="PatchOperationAdd">
-	<xpath>/Defs/ThingDef[defName = "Armchair"]/comps</xpath>
+	<xpath>Defs/ThingDef[defName = "Armchair"]/comps</xpath>
 		<value>
 			<li Class="DoubleGraphicLayer.CompProperties_SecondLayer">
 				<graphicData/>
@@ -60,7 +61,7 @@
 		</value>
 	</match>
 	<nomatch Class="PatchOperationAdd">
-	<xpath>/Defs/ThingDef[defName = "Armchair"]/comps</xpath>
+	<xpath>Defs/ThingDef[defName = "Armchair"]/comps</xpath>
 		<value>
 			<li Class="DoubleGraphicLayer.CompProperties_SecondLayer">
 				<graphicData/>
@@ -77,19 +78,19 @@
 	<operations>	
 	<!-- Couch -->
 		<li Class="PatchOperationTest">
-			<xpath>/Defs/ThingDef[defName = "Couch"]</xpath>
+			<xpath>Defs/ThingDef[defName = "Couch"]</xpath>
 		</li>
 		<li Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName = "Couch"]/comps</xpath>
+		<xpath>Defs/ThingDef[defName = "Couch"]/comps</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName = "Couch"]</xpath>
+			<xpath>Defs/ThingDef[defName = "Couch"]</xpath>
 				<value>
 					<comps/>
 				</value>
 		</nomatch>
 		</li>
 		<li Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef[defName = "Couch"]/comps</xpath>
+		<xpath>Defs/ThingDef[defName = "Couch"]/comps</xpath>
 			<value>
 				<li Class="DoubleGraphicLayer.CompProperties_SecondLayer">
 					<graphicData/>
@@ -99,7 +100,7 @@
 		</li>
 	
 		<li Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName = "Couch"]</xpath>
+			<xpath>Defs/ThingDef[defName = "Couch"]</xpath>
 			<value>
 				<drawerType>MapMeshAndRealTime</drawerType>
 			</value>

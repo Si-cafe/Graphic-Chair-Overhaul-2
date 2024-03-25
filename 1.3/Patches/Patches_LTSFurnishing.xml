@@ -8,17 +8,17 @@
         <success>Always</success>
         <operations>
 		<li Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName = "LTS_Klimpfjall"]/comps</xpath>
+		<xpath>Defs/ThingDef[defName = "LTS_Klimpfjall"]/comps</xpath>
 		<success>Always</success>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName = "LTS_Klimpfjall"]</xpath>
+			<xpath>Defs/ThingDef[defName = "LTS_Klimpfjall"]</xpath>
 				<value>
 					<comps/>
 				</value>
 		</nomatch>
 		</li>	
         <li Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef[defName = "LTS_Klimpfjall"]/comps</xpath>
+		<xpath>Defs/ThingDef[defName = "LTS_Klimpfjall"]/comps</xpath>
 		<value>
         <li Class="DoubleGraphicLayer.CompProperties_SecondLayer">
           <graphicData>
@@ -32,17 +32,17 @@
 		</li>
 
 		<li Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName = "LTS_Mullfjallet"]/comps</xpath>
+		<xpath>Defs/ThingDef[defName = "LTS_Mullfjallet"]/comps</xpath>
 		<success>Always</success>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName = "LTS_Mullfjallet"]</xpath>
+			<xpath>Defs/ThingDef[defName = "LTS_Mullfjallet"]</xpath>
 				<value>
 					<comps/>
 				</value>
 		</nomatch>
 		</li>	
         <li Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef[defName = "LTS_Mullfjallet"]/comps</xpath>
+		<xpath>Defs/ThingDef[defName = "LTS_Mullfjallet"]/comps</xpath>
 		<value>
         <li Class="DoubleGraphicLayer.CompProperties_SecondLayer">
           <graphicData>
@@ -55,7 +55,7 @@
 		</value>
 		</li>
 		<li Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef[defName = "LTS_Mullfjallet" or defName = "LTS_Klimpfjall"]</xpath>
+		<xpath>Defs/ThingDef[defName = "LTS_Mullfjallet" or defName = "LTS_Klimpfjall"]</xpath>
 		<value>
 			<drawerType>MapMeshAndRealTime</drawerType>
 		</value>

@@ -9,17 +9,17 @@
         <operations>
 <!-- DocStu_Sofa -->
 		<li Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName = "DocStu_Sofa"]/comps</xpath>
+		<xpath>Defs/ThingDef[defName = "DocStu_Sofa"]/comps</xpath>
 		<success>Always</success>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName = "DocStu_Sofa"]</xpath>
+			<xpath>Defs/ThingDef[defName = "DocStu_Sofa"]</xpath>
 				<value>
 					<comps/>
 				</value>
 		</nomatch>
 		</li>	
         <li Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef[defName = "DocStu_Sofa"]/comps</xpath>
+		<xpath>Defs/ThingDef[defName = "DocStu_Sofa"]/comps</xpath>
 			<value>
 				<li Class="DoubleGraphicLayer.CompProperties_SecondLayer">
 					<graphicData/>
@@ -29,7 +29,7 @@
 		</li>
 
 		<li Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef[defName = "DocStu_Sofa"]</xpath>
+		<xpath>Defs/ThingDef[defName = "DocStu_Sofa"]</xpath>
 		<value>
 			<drawerType>MapMeshAndRealTime</drawerType>
 		</value>

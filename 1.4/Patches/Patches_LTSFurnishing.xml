@@ -1,61 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 <Operation Class="PatchOperationFindMod">
-    <mods>
-        <li>[LTS]Furnishing</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-        <success>Always</success>
-        <operations>
-<!-- LTS_Klimpfjall -->
-		<li Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName = "LTS_Klimpfjall"]/comps</xpath>
+	<mods>
+		<li>[LTS]Furnishing</li>
+	</mods>
+	<match Class="PatchOperationSequence">
 		<success>Always</success>
-		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName = "LTS_Klimpfjall"]</xpath>
+		<operations>
+	<!-- LTS_Klimpfjall -->
+			<li Class="PatchOperationConditional">
+			<xpath>Defs/ThingDef[defName = "LTS_Klimpfjall"]/comps</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "LTS_Klimpfjall"]</xpath>
+						<value>
+							<comps/>
+						</value>
+				</nomatch>
+			</li>
+			<li Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName = "LTS_Klimpfjall"]/comps</xpath>
 				<value>
-					<comps/>
+					<li Class="DoubleGraphicLayer.CompProperties_SecondLayer">
+						<graphicData/>
+						<allwaysShowGizmo>false</allwaysShowGizmo>
+					</li>
 				</value>
-		</nomatch>
-		</li>	
-        <li Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef[defName = "LTS_Klimpfjall"]/comps</xpath>
-			<value>
-				<li Class="DoubleGraphicLayer.CompProperties_SecondLayer">
-					<graphicData/>
-					<allwaysShowGizmo>false</allwaysShowGizmo>
-				</li>
-			</value>
-		</li>
-<!-- LTS_Mullfjallet -->
-		<li Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName = "LTS_Mullfjallet"]/comps</xpath>
-		<success>Always</success>
-		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName = "LTS_Mullfjallet"]</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName = "LTS_Klimpfjall"]</xpath>
 				<value>
-					<comps/>
+					<drawerType>MapMeshAndRealTime</drawerType>
 				</value>
-		</nomatch>
-		</li>	
-        <li Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef[defName = "LTS_Mullfjallet"]/comps</xpath>
-			<value>
-				<li Class="DoubleGraphicLayer.CompProperties_SecondLayer">
-					<graphicData/>
-					<allwaysShowGizmo>false</allwaysShowGizmo>
-				</li>
-			</value>
-		</li>
-		<li Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef[defName = "LTS_Mullfjallet" or defName = "LTS_Klimpfjall"]</xpath>
-		<value>
-			<drawerType>MapMeshAndRealTime</drawerType>
-		</value>
-		</li>
+			</li>
+		<!-- The original north-facing image is too high to look like it's sitting, so we'll add an offset. -->
+			<li Class="PatchOperationConditional">
+			<xpath>Defs/ThingDef[defName = "LTS_Klimpfjall"]/graphicData/drawOffsetNorth</xpath>
+			<success>Always</success>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "LTS_Klimpfjall"]/graphicData</xpath>
+					<value>
+						<drawOffsetNorth>(0,0,-0.2)</drawOffsetNorth>
+					</value>
+			</nomatch>
+			</li>
+		</operations>
+	</match>
+</Operation>
 
-	</operations>
-    </match>
+<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>[LTS]Furnishing</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	<success>Always</success>
+		<operations>
+	<!-- LTS_Mullfjallet -->
+			<li Class="PatchOperationConditional">
+			<xpath>Defs/ThingDef[defName = "LTS_Mullfjallet" or
+								defName = "LTS_Kivik" or
+								defName = "LTS_StockholmSofa"]/comps</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "LTS_Mullfjallet" or
+									defName = "LTS_Kivik" or 
+									defName = "LTS_StockholmSofa"]</xpath>
+						<value>
+							<comps/>
+						</value>
+				</nomatch>
+			</li>
+			<li Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName = "LTS_Mullfjallet"]/comps</xpath>
+				<value>
+					<li Class="DoubleGraphicLayer.CompProperties_SecondLayer">
+						<graphicData/>
+						<allwaysShowGizmo>false</allwaysShowGizmo>
+					</li>
+				</value>
+			</li>		<li Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName = "LTS_Kivik" or
+								defName = "LTS_StockholmSofa"]/comps</xpath>
+				<value>
+					<li Class="DoubleGraphicLayer.CompProperties_SecondLayer">
+						<graphicData/>
+						<allwaysShowGizmo>true</allwaysShowGizmo>
+					</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName = "LTS_Mullfjallet" or
+								defName = "LTS_Kivik" or 
+								defName = "LTS_StockholmSofa"]</xpath>
+				<value>
+					<drawerType>MapMeshAndRealTime</drawerType>
+				</value>
+			</li>
+		</operations>
+	</match>
 </Operation>
 
 </Patch>

@@ -21,7 +21,10 @@ namespace DoubleGraphicLayer
     {
         private readonly SecondLayerSettings settings;
 
-        public SecondLayerMod(ModContentPack content) : base(content) => settings = GetSettings<SecondLayerSettings>();
+        public SecondLayerMod(ModContentPack content) : base(content)
+        {
+            settings = GetSettings<SecondLayerSettings>();
+        }
 
         public override void DoSettingsWindowContents(UnityEngine.Rect rect)
         {
@@ -33,8 +36,9 @@ namespace DoubleGraphicLayer
             listing_Standard.End();
         }
 
-        public override string SettingsCategory() => "DoubleGraphicLayer_ModName".Translate();
-
-
+        public override string SettingsCategory()
+        {
+            return "DoubleGraphicLayer_ModName".Translate();
+        }
     }
 }

@@ -9,17 +9,17 @@
         <operations>
 <!-- FFE_Sofa -->
 		<li Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName = "FFE_Sofa"]/comps</xpath>
+		<xpath>Defs/ThingDef[defName = "FFE_Sofa"]/comps</xpath>
 		<success>Always</success>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName = "FFE_Sofa"]</xpath>
+			<xpath>Defs/ThingDef[defName = "FFE_Sofa"]</xpath>
 				<value>
 					<comps/>
 				</value>
 		</nomatch>
 		</li>	
         <li Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef[defName = "FFE_Sofa"]/comps</xpath>
+		<xpath>Defs/ThingDef[defName = "FFE_Sofa"]/comps</xpath>
 			<value>
 				<li Class="DoubleGraphicLayer.CompProperties_SecondLayer">
 					<graphicData/>
@@ -28,24 +28,24 @@
 			</value>
 		</li>
 		<li Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef[defName = "FFE_Sofa"]</xpath>
+		<xpath>Defs/ThingDef[defName = "FFE_Sofa"]</xpath>
 		<value>
 			<drawerType>MapMeshAndRealTime</drawerType>
 		</value>
 		</li>
 <!-- FFE_RoyalSofa -->
 		<li Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName = "FFE_RoyalSofa"]/comps</xpath>
+		<xpath>Defs/ThingDef[defName = "FFE_RoyalSofa"]/comps</xpath>
 		<success>Always</success>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName = "FFE_RoyalSofa"]</xpath>
+			<xpath>Defs/ThingDef[defName = "FFE_RoyalSofa"]</xpath>
 				<value>
 					<comps/>
 				</value>
 		</nomatch>
 		</li>	
         <li Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef[defName = "FFE_RoyalSofa"]/comps</xpath>
+		<xpath>Defs/ThingDef[defName = "FFE_RoyalSofa"]/comps</xpath>
 			<value>
 				<li Class="DoubleGraphicLayer.CompProperties_SecondLayer">
 					<graphicData/>
@@ -54,7 +54,7 @@
 			</value>
 		</li>
 		<li Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef[defName = "FFE_RoyalSofa"]</xpath>
+		<xpath>Defs/ThingDef[defName = "FFE_RoyalSofa"]</xpath>
 		<value>
 			<drawerType>MapMeshAndRealTime</drawerType>
 		</value>

@@ -9,17 +9,17 @@
 	<operations>
 <!-- RGK_Chair -->
 		<li Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName = "RGK_Chair"]/comps</xpath>
+		<xpath>Defs/ThingDef[defName = "RGK_Chair"]/comps</xpath>
 		<success>Always</success>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName = "RGK_Chair"]</xpath>
+			<xpath>Defs/ThingDef[defName = "RGK_Chair"]</xpath>
 				<value>
 					<comps/>
 				</value>
 		</nomatch>
 		</li>
 		<li Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef[defName = "RGK_Chair"]/comps</xpath>
+		<xpath>Defs/ThingDef[defName = "RGK_Chair"]/comps</xpath>
 			<value>
 				<li Class="DoubleGraphicLayer.CompProperties_SecondLayer">
 					<graphicData/>
@@ -29,17 +29,17 @@
 		</li>
 <!-- RGKDiningChair -->
 		<li Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName = "RGKDiningChair"]/comps</xpath>
+		<xpath>Defs/ThingDef[defName = "RGKDiningChair"]/comps</xpath>
 		<success>Always</success>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName = "RGKDiningChair"]</xpath>
+			<xpath>Defs/ThingDef[defName = "RGKDiningChair"]</xpath>
 				<value>
 					<comps/>
 				</value>
 		</nomatch>
 		</li>
 		<li Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef[defName = "RGKDiningChair"]/comps</xpath>
+		<xpath>Defs/ThingDef[defName = "RGKDiningChair"]/comps</xpath>
 			<value>
 				<li Class="DoubleGraphicLayer.CompProperties_SecondLayer">
 					<graphicData/>
@@ -49,17 +49,17 @@
 		</li>
 <!-- GL_Bench -->
 		<li Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName = "GL_Bench"]/comps</xpath>
+		<xpath>Defs/ThingDef[defName = "GL_Bench"]/comps</xpath>
 		<success>Always</success>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName = "GL_Bench"]</xpath>
+			<xpath>Defs/ThingDef[defName = "GL_Bench"]</xpath>
 				<value>
 					<comps/>
 				</value>
 		</nomatch>
 		</li>
 		<li Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef[defName = "GL_Bench"]/comps</xpath>
+		<xpath>Defs/ThingDef[defName = "GL_Bench"]/comps</xpath>
 			<value>
 				<li Class="DoubleGraphicLayer.CompProperties_SecondLayer">
 					<graphicData/>
@@ -69,7 +69,7 @@
 		</li>
 
 		<li Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef[defName = "RGK_Chair" or defName = "RGKDiningChair" or defName = "GL_Bench"]</xpath>
+		<xpath>Defs/ThingDef[defName = "RGK_Chair" or defName = "RGKDiningChair" or defName = "GL_Bench"]</xpath>
 			<value>
 				<drawerType>MapMeshAndRealTime</drawerType>
 			</value>

@@ -9,17 +9,17 @@
         <operations>
  
 		<li Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName = "Anon2SquareDiningChair"]/comps</xpath>
+		<xpath>Defs/ThingDef[defName = "Anon2SquareDiningChair"]/comps</xpath>
 		<success>Always</success>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName = "Anon2SquareDiningChair"]</xpath>
+			<xpath>Defs/ThingDef[defName = "Anon2SquareDiningChair"]</xpath>
 				<value>
 					<comps/>
 				</value>
 		</nomatch>
 		</li>
 		<li Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef[defName = "Anon2SquareDiningChair"]/comps</xpath>
+		<xpath>Defs/ThingDef[defName = "Anon2SquareDiningChair"]/comps</xpath>
 		<value>
         <li Class="DoubleGraphicLayer.CompProperties_SecondLayer">
           <graphicData>
@@ -33,17 +33,17 @@
 		</li>
 
 		<li Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName = "Anon2CushionedChair"]/comps</xpath>
+		<xpath>Defs/ThingDef[defName = "Anon2CushionedChair"]/comps</xpath>
 		<success>Always</success>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName = "Anon2CushionedChair"]</xpath>
+			<xpath>Defs/ThingDef[defName = "Anon2CushionedChair"]</xpath>
 				<value>
 					<comps/>
 				</value>
 		</nomatch>
 		</li>	
 	<li  Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef[defName = "Anon2CushionedChair"]/comps</xpath>
+		<xpath>Defs/ThingDef[defName = "Anon2CushionedChair"]/comps</xpath>
 		<value>
         <li Class="DoubleGraphicLayer.CompProperties_SecondLayer">
           <graphicData>
@@ -57,7 +57,7 @@
 		    </li>
 		
 		<li Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef[defName = "Anon2CouchRight"]</xpath>
+		<xpath>Defs/ThingDef[defName = "Anon2CouchRight"]</xpath>
 		<value>
 	<comps>
         <li Class="DoubleGraphicLayer.CompProperties_SecondLayer">
@@ -72,7 +72,7 @@
 		</value>
 		    </li>
 	<li Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef[defName = "Anon2CouchLeft"]</xpath>
+		<xpath>Defs/ThingDef[defName = "Anon2CouchLeft"]</xpath>
 		<value>
 	<comps>
         <li Class="DoubleGraphicLayer.CompProperties_SecondLayer">
@@ -87,7 +87,7 @@
 		</value>
 		    </li>
 	<li Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef[defName = "Anon2CouchCenter"]</xpath>
+		<xpath>Defs/ThingDef[defName = "Anon2CouchCenter"]</xpath>
 		<value>
 	<comps>
         <li Class="DoubleGraphicLayer.CompProperties_SecondLayer">
@@ -103,7 +103,7 @@
 		    </li>
 		
 	<li Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef[defName = "Anon2CouchCorner"]</xpath>
+		<xpath>Defs/ThingDef[defName = "Anon2CouchCorner"]</xpath>
 		<value>
 	<comps>
         <li Class="DoubleGraphicLayer.CompProperties_SecondLayer">
@@ -119,7 +119,7 @@
 		    </li>
 
 	<li Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef[defName = "Anon2SquareDiningChair" or 
+		<xpath>Defs/ThingDef[defName = "Anon2SquareDiningChair" or 
 						defName = "Anon2CushionedChair" or 
 						defName = "Anon2CouchRight" or 
 						defName = "Anon2CouchLeft" or 

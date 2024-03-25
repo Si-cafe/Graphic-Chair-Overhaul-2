@@ -15,7 +15,10 @@ namespace DoubleGraphicLayer
 
         public float Altitude => Altitudes.AltitudeFor(altitudeLayer);
 
-        public CompProperties_SecondLayer() => compClass = typeof(CompSecondLayer);
+        public CompProperties_SecondLayer()
+        {
+            compClass = typeof(CompSecondLayer);
+        }
     }
 
     public class CompSecondLayer : ThingComp
@@ -23,8 +26,12 @@ namespace DoubleGraphicLayer
         private static readonly SecondLayerSettings Settings = LoadedModManager.GetMod<SecondLayerMod>().GetSettings<SecondLayerSettings>();
 
         private Graphic graphicInt;
-        public bool toggleSecondLayer = Settings.defaultToggle;
-
+        private bool toggleSecondLayer = Settings.defaultToggle;
+        public bool ToggleSecondLayer
+        {
+            get => toggleSecondLayer;
+            set => toggleSecondLayer = value;
+        }
         private bool ShowSecondLayer => parent.Rotation == Rot4.North || Props.allwaysShowGizmo;
 
         public CompProperties_SecondLayer Props => (CompProperties_SecondLayer)props;
@@ -43,8 +50,8 @@ namespace DoubleGraphicLayer
         {
             base.PostSpawnSetup(respawningAfterLoad);
 
-            var propsData = Props.graphicData;
-            var parentData = parent.def.graphicData;
+            GraphicData propsData = Props.graphicData;
+            GraphicData parentData = parent.def.graphicData;
 
             propsData.drawSize = parentData.drawSize;
             propsData.graphicClass = parentData.graphicClass;
@@ -54,6 +61,7 @@ namespace DoubleGraphicLayer
             propsData.drawOffsetEast = parentData.drawOffsetEast;
             propsData.drawOffsetSouth = parentData.drawOffsetSouth;
             propsData.drawOffsetWest = parentData.drawOffsetWest;
+            propsData.drawRotated = parentData.drawRotated;
 
             LongEventHandlerSecondLayerAssign();
         }
@@ -63,16 +71,20 @@ namespace DoubleGraphicLayer
             if (toggleSecondLayer && ShowSecondLayer)
             {
                 base.PostDraw();
-                var loc = GenThing.TrueCenter(parent.Position, parent.Rotation, parent.def.size, Props.Altitude);
-                Graphic.Draw(loc, parent.Rotation, parent);
+                Vector3 drawPos = GenThing.TrueCenter(parent.Position, parent.Rotation, parent.def.size, Props.Altitude);
+                drawPos.y += drawPos.z * -0.00000405f;
+                Graphic.Draw(drawPos, parent.Rotation, parent);
             }
         }
 
-        public override void PostExposeData() => Scribe_Values.Look(ref toggleSecondLayer, "toggleSecondLayer", true);
+        public override void PostExposeData()
+        {
+            Scribe_Values.Look(ref toggleSecondLayer, "toggleSecondLayer", true);
+        }
 
         public override IEnumerable<Gizmo> CompGetGizmosExtra()
         {
-            foreach (var gizmo in base.CompGetGizmosExtra()) yield return gizmo;
+            foreach (Gizmo gizmo in base.CompGetGizmosExtra()) yield return gizmo;
 
             if (ShowSecondLayer)
             {
@@ -102,16 +114,20 @@ namespace DoubleGraphicLayer
             yield break;
         }
 
-        public void LongEventHandlerSecondLayerAssign() => LongEventHandler.ExecuteWhenFinished(SecondLayerAssign);
+        public void LongEventHandlerSecondLayerAssign()
+        {
+            LongEventHandler.ExecuteWhenFinished(SecondLayerAssign);
+        }
 
         public void SecondLayerAssign()
         {
             try
             {
-                var graphicClass = Props.graphicData.graphicClass;
+                System.Type graphicClass = Props.graphicData.graphicClass;
 
                 if (graphicClass == typeof(Graphic_Multi)) SecondLayerAssignInt<Graphic_Multi>();
-                else if (graphicClass == typeof(Graphic_Single)) SecondLayerAssignInt<Graphic_Multi>();
+                else if (graphicClass == typeof(Graphic_Single)) SecondLayerAssignInt<Graphic_Single>();
+                else if (graphicClass == typeof(Graphic_Random)) SecondLayerAssignInt<Graphic_Random>();
             }
             catch (System.Exception)
             {
@@ -122,12 +138,11 @@ namespace DoubleGraphicLayer
 
         private void SecondLayerAssignInt<G>() where G : Graphic, new()
         {
-            var graphic = parent.Graphic;
-            var data = parent.StyleDef?.graphicData;
-
-            var path = $"{data?.texPath ?? graphic.path}_back";
+            Graphic graphic = parent.Graphic;
+            GraphicData data = parent.StyleDef?.graphicData;
+            string path = $"{data?.texPath ?? graphic.path}_back";
             data ??= parent.def.graphicData;
-            var shaderType = data.shaderType;
+            ShaderTypeDef shaderType = data.shaderType;
 
             // Mod "Faster Game Loading" delays the loading of graphics (optional), so shaderType might be null
             if (shaderType == null) return;

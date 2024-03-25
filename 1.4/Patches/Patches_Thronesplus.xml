@@ -9,7 +9,7 @@
 	<operations>
 
 		<li Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName = "ThroneA" or 
+			<xpath>Defs/ThingDef[defName = "ThroneA" or 
 								defName = "ThroneB" or 
 								defName = "ThroneC" or 
 								defName = "GrandThroneA" or 
@@ -23,7 +23,7 @@
 			</value>
 		</li>
 		<li Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName = "ThroneA" or
+			<xpath>Defs/ThingDef[defName = "ThroneA" or
 								defName = "ThroneB" or 
 								defName = "ThroneC" or 
 								defName = "GrandThroneA" or 

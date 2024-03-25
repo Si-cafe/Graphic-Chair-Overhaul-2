@@ -1,7 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-# SharpDevelop 5.1
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.34601.136
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoubleGraphicLayer", "DoubleGraphicLayer.csproj", "{61B42B9B-FA45-4391-B6E4-AB0A7CD1557D}"
 EndProject
 Global
@@ -14,5 +15,11 @@ Global
 		{61B42B9B-FA45-4391-B6E4-AB0A7CD1557D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{61B42B9B-FA45-4391-B6E4-AB0A7CD1557D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{61B42B9B-FA45-4391-B6E4-AB0A7CD1557D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F53A7FCC-8639-4067-9C8F-30B6DF969063}
 	EndGlobalSection
 EndGlobal

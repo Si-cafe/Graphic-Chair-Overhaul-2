@@ -8,17 +8,17 @@
         <success>Always</success>
         <operations>
 		<li Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName = "RLE_RelaxChair"]/comps</xpath>
+		<xpath>Defs/ThingDef[defName = "RLE_RelaxChair"]/comps</xpath>
 		<success>Always</success>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName = "RLE_RelaxChair"]</xpath>
+			<xpath>Defs/ThingDef[defName = "RLE_RelaxChair"]</xpath>
 				<value>
 					<comps/>
 				</value>
 		</nomatch>
 		</li>	
         <li Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef[defName = "RLE_RelaxChair"]/comps</xpath>
+		<xpath>Defs/ThingDef[defName = "RLE_RelaxChair"]/comps</xpath>
 		<value>
         <li Class="DoubleGraphicLayer.CompProperties_SecondLayer">
           <graphicData>
@@ -33,17 +33,17 @@
 		</li>
 
 		<li Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName = "RLE_WorkingChair"]/comps</xpath>
+		<xpath>Defs/ThingDef[defName = "RLE_WorkingChair"]/comps</xpath>
 		<success>Always</success>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName = "RLE_WorkingChair"]</xpath>
+			<xpath>Defs/ThingDef[defName = "RLE_WorkingChair"]</xpath>
 				<value>
 					<comps/>
 				</value>
 		</nomatch>
 		</li>	
         <li Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef[defName = "RLE_WorkingChair"]/comps</xpath>
+		<xpath>Defs/ThingDef[defName = "RLE_WorkingChair"]/comps</xpath>
 		<value>
         <li Class="DoubleGraphicLayer.CompProperties_SecondLayer">
           <graphicData>
@@ -57,7 +57,7 @@
 		</value>
 		</li>
 		<li Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef[defName = "RLE_RelaxChair" or defName = "RLE_WorkingChair"]</xpath>
+		<xpath>Defs/ThingDef[defName = "RLE_RelaxChair" or defName = "RLE_WorkingChair"]</xpath>
 		<value>
 			<drawerType>MapMeshAndRealTime</drawerType>
 		</value>

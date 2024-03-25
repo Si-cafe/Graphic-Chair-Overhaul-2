@@ -25,7 +25,7 @@ namespace DoubleGraphicLayer
             HarmonyLib.Harmony harm = new(harmID);
             harm.PatchAll();
 
-            var harmType = typeof(DGLHarmony);
+            System.Type harmType = typeof(DGLHarmony);
 
             // Reassign the second layer when the color changes
             harm.Patch(
@@ -41,9 +41,15 @@ namespace DoubleGraphicLayer
         }
 
         // the name of the Thing must match the signature of the patched method
-        private static void Postfix_SecondLayerAssign_Color(Thing __instance) => Postfix_SecondLayerAssign_Style(__instance);
+        private static void Postfix_SecondLayerAssign_Color(Thing __instance)
+        {
+            Postfix_SecondLayerAssign_Style(__instance);
+        }
 
-        private static void Postfix_SecondLayerAssign_Style(Thing thing) => thing.TryGetComp<CompSecondLayer>()?.LongEventHandlerSecondLayerAssign();
+        private static void Postfix_SecondLayerAssign_Style(Thing thing)
+        {
+            thing.TryGetComp<CompSecondLayer>()?.LongEventHandlerSecondLayerAssign();
+        }
     }
 }
 

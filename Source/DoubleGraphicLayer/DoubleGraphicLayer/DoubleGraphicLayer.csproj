@@ -82,6 +82,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CompFireOverlayOverLayer\CompDarklightOverlay.cs" />
+    <Compile Include="CompFireOverlayOverLayer\CompFireOverlay_OverLayer.cs" />
+    <Compile Include="CompFireOverlayOverLayer\CompSanguophageMeetingFire_OverLayer.cs" />
     <Compile Include="CompSecondLayer.cs" />
     <Compile Include="DGLHarmony.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -13,7 +13,7 @@
         <operations>
 <!-- HSEdoThrone -->
 		<li Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef[defName = "HSEdoThrone"]/comps</xpath>
+		<xpath>Defs/ThingDef[defName = "HSEdoThrone"]/comps</xpath>
 			<value>
 				<li Class="DoubleGraphicLayer.CompProperties_SecondLayer">
 					<graphicData/>
@@ -22,7 +22,7 @@
 			</value>
 		</li>
 		<li Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef[defName = "HSEdoThrone"]</xpath>
+		<xpath>Defs/ThingDef[defName = "HSEdoThrone"]</xpath>
 			<value>
 				<drawerType>MapMeshAndRealTime</drawerType>
 			</value>

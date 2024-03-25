@@ -9,17 +9,17 @@
         <operations>
 <!-- Seat_SquareChair -->
 		<li Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName = "Seat_SquareChair"]/comps</xpath>
+		<xpath>Defs/ThingDef[defName = "Seat_SquareChair"]/comps</xpath>
 		<success>Always</success>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName = "Seat_SquareChair"]</xpath>
+			<xpath>Defs/ThingDef[defName = "Seat_SquareChair"]</xpath>
 				<value>
 					<comps/>
 				</value>
 		</nomatch>
 		</li>
 		<li Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName = "Seat_SquareChair"]/comps</xpath>
+			<xpath>Defs/ThingDef[defName = "Seat_SquareChair"]/comps</xpath>
 			<value>
 				<li Class="DoubleGraphicLayer.CompProperties_SecondLayer">
 					<graphicData/>
@@ -29,17 +29,17 @@
 		</li>
 <!-- Seat_ModernChair -->
 		<li Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName = "Seat_ModernChair"]/comps</xpath>
+		<xpath>Defs/ThingDef[defName = "Seat_ModernChair"]/comps</xpath>
 		<success>Always</success>
 		<nomatch Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "Seat_ModernChair"]</xpath>
+				<xpath>Defs/ThingDef[defName = "Seat_ModernChair"]</xpath>
 					<value>
 						<comps/>
 					</value>
 		</nomatch>
 		</li>		
 		<li  Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef[defName = "Seat_ModernChair"]/comps</xpath>
+		<xpath>Defs/ThingDef[defName = "Seat_ModernChair"]/comps</xpath>
 			<value>
 				<li Class="DoubleGraphicLayer.CompProperties_SecondLayer">
 					<graphicData/>
@@ -49,17 +49,17 @@
 		</li>
 <!-- Seat_RoyalChair		 -->
 		<li Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName = "Seat_RoyalChair"]/comps</xpath>
+		<xpath>Defs/ThingDef[defName = "Seat_RoyalChair"]/comps</xpath>
 		<success>Always</success>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName = "Seat_RoyalChair"]</xpath>
+			<xpath>Defs/ThingDef[defName = "Seat_RoyalChair"]</xpath>
 				<value>
 					<comps/>
 				</value>
 		</nomatch>
 		</li>			
 		<li Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef[defName = "Seat_RoyalChair"]/comps</xpath>
+		<xpath>Defs/ThingDef[defName = "Seat_RoyalChair"]/comps</xpath>
 			<value>
 				<li Class="DoubleGraphicLayer.CompProperties_SecondLayer">
 					<graphicData/>
@@ -69,17 +69,17 @@
 		</li>
 <!-- Seat_RoyalArmchair -->
 		<li Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName = "Seat_RoyalArmchair"]/comps</xpath>
+		<xpath>Defs/ThingDef[defName = "Seat_RoyalArmchair"]/comps</xpath>
 		<success>Always</success>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName = "Seat_RoyalArmchair"]</xpath>
+			<xpath>Defs/ThingDef[defName = "Seat_RoyalArmchair"]</xpath>
 				<value>
 					<comps/>
 				</value>
 		</nomatch>
 		</li>		
 		<li Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef[defName = "Seat_RoyalArmchair"]/comps</xpath>
+		<xpath>Defs/ThingDef[defName = "Seat_RoyalArmchair"]/comps</xpath>
 			<value>
 				<li Class="DoubleGraphicLayer.CompProperties_SecondLayer">
 					<graphicData/>
@@ -89,7 +89,7 @@
 		</li>
 
 		<li Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName = "Seat_SquareChair" or 
+			<xpath>Defs/ThingDef[defName = "Seat_SquareChair" or 
 							defName = "Seat_ModernChair" or 
 							defName = "Seat_RoyalChair" or 
 							defName = "Seat_RoyalArmchair"]</xpath>
